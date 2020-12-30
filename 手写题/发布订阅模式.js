@@ -15,11 +15,11 @@ class Subscribe {
 }
 
 let pubsub = new Subscribe();
-// 订阅事件 frist
+// 订阅事件 first
 pubsub.subscribe("first", function (a, b) {
   console.log(a, b);
 });
-// 订阅事件 frist 允许注册多次
+// 订阅事件 first 允许注册多次
 pubsub.subscribe("first", function (a, b) {
   console.log(a, b);
 });
@@ -29,5 +29,5 @@ pubsub.subscribe("second", function (a, b) {
 });
 
 //发布事件
-pubsub.publish("frist", "hello", "word");
+pubsub.publish("first", "hello", "word");
 pubsub.publish("second", "hello1", "word1");
