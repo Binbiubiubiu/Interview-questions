@@ -1,0 +1,39 @@
+{
+  "name": "Interview-questions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava -v "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MeidanFE/Interview-questions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MeidanFE/Interview-questions/issues"
+  },
+  "homepage": "https://github.com/MeidanFE/Interview-questions#readme",
+  "devDependencies": {
+    "@ava/babel": "^1.0.1",
+    "@babel/preset-env": "^7.12.11",
+    "ava": "^3.14.0"
+  },
+  "dependencies": {
+    "@babel/register": "^7.12.10"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "ava": {
+    "babel": true,
+    "require": [
+      "./test/_register.js"
+    ]
+  }
+}
