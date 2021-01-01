@@ -1,10 +1,9 @@
 import test from "ava";
 import { randomNumberArr } from "../../utils/index.js";
-import { selectSort } from "../选择排序.js";
+import { mergeSort } from "../归并排序.js";
 
-test("【选择排序】 case01", (t) => {
+test("【归并排序】 case01", (t) => {
   const arr = randomNumberArr();
   const rightSortArr = arr.sort((a, b) => a - b);
-
-  t.deepEqual(selectSort(arr), rightSortArr, "排序错误");
+  t.deepEqual(mergeSort(arr), rightSortArr, "排序错误");
 });
