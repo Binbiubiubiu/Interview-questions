@@ -37,7 +37,7 @@ console.log(tea instanceof Teacher); // true
 //寄生继承
 
 function inheritPrototype(subType, superType) {
-  var prototype = Object.create(superType, prototype);
+  var prototype = Object.create(superType.prototype);
   // 修正指向
   prototype.constructor = subType;
   superType.prototype = prototype;
