@@ -40,7 +40,7 @@ function inheritPrototype(subType, superType) {
   var prototype = Object.create(superType.prototype);
   // 修正指向
   prototype.constructor = subType;
-  superType.prototype = prototype;
+  subType.prototype = prototype;
 }
 
 // Teacher.prototype = Object.create(Person.prototype)这句就可以改为
