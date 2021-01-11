@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES6",                       
+    "module": "CommonJS",                        
+    "moduleResolution": "node",          
+                       
+    "paths": {},                        
+    "allowSyntheticDefaultImports": true,  
+    "esModuleInterop": true,                 
+    "skipLibCheck": true,                   
+    "forceConsistentCasingInFileNames": true  
+  }
+}

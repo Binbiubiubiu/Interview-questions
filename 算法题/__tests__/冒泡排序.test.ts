@@ -1,6 +1,6 @@
 import test from "ava";
-import { randomNumberArr } from "../../utils/index.js";
-import { bubbleSort01, bubbleSort02 } from "../冒泡排序.js";
+import { randomNumberArr } from "../../utils/index";
+import { bubbleSort01, bubbleSort02 } from "../冒泡排序";
 
 test("【冒泡排序】 case01", (t) => {
   const arr = randomNumberArr();

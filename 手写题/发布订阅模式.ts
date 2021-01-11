@@ -1,30 +1,31 @@
 class Subscribe {
+  tiopics: {};
   constructor() {
     this.tiopics = {};
   }
-  subscribe(name, fn) {
+  subscribe(name: string, fn: Function) {
     if (!this.tiopics[name]) {
       this.tiopics[name] = [];
     }
     this.tiopics[name].push(fn);
   }
 
-  publish(name, ...arg) {
-    this.tiopics[name].forEach((cb) => cb(...arg));
+  publish(name: string, ...arg: any[]) {
+    this.tiopics[name].forEach((cb: (...args: any[]) => void) => cb(...arg));
   }
 }
 
 let pubsub = new Subscribe();
 // 订阅事件 first
-pubsub.subscribe("first", function (a, b) {
+pubsub.subscribe("first", function (a: any, b: any) {
   console.log(a, b);
 });
 // 订阅事件 first 允许注册多次
-pubsub.subscribe("first", function (a, b) {
+pubsub.subscribe("first", function (a: any, b: any) {
   console.log(a, b);
 });
 // 订阅事件 second
-pubsub.subscribe("second", function (a, b) {
+pubsub.subscribe("second", function (a: any, b: any) {
   console.log(a, b);
 });
 

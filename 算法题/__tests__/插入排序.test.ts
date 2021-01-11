@@ -1,6 +1,6 @@
 import test from "ava";
-import { randomNumberArr } from "../../utils/index.js";
-import { insertionSort } from "../插入排序.js";
+import { randomNumberArr } from "../../utils/index";
+import { insertionSort } from "../插入排序";
 
 test("【插入排序】 case01", (t) => {
   const arr = randomNumberArr();

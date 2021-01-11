@@ -1,6 +1,6 @@
 import test from "ava";
-import { randomNumberArr } from "../../utils/index.js";
-import { mergeSort } from "../归并排序.js";
+import { randomNumberArr } from "../../utils/index";
+import { mergeSort } from "../归并排序";
 
 test("【归并排序】 case01", (t) => {
   const arr = randomNumberArr();
